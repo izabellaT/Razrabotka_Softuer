@@ -9,6 +9,17 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<form asp-controller="Dogs" asp-action="All" method="get">
+
+    <p>
+        Breed : <input type="text" name="SearchStringBuilder" />
+        <input type="submit" value="Filter" />
+        Name : <input type="text" name="SearchStringName" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>

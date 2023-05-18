@@ -52,7 +52,7 @@ namespace DogsAppWeb.Controllers
         {
             return this.View();
         }
-        public IActionResult All()
+        public IActionResult All(string searchStringBuilder, string searchStringName)
         {
             List<DogAllViewModel> dogs = context.Dogs.Select(dogFromDb => new DogAllViewModel
             {
@@ -63,6 +63,18 @@ namespace DogsAppWeb.Controllers
                 Picture = dogFromDb.Picture
             }
             ).ToList();
+            if (!String.IsNullOrEmpty(searchStringBuilder)&& !String.IsNullOrEmpty(searchStringName))
+            {
+                dogs = dogs.Where(x => x.Breed.Contains(searchStringBuilder) && x.Name.Contains(searchStringName)).ToList();
+            }
+            else if (!String.IsNullOrEmpty(searchStringBuilder))
+            {
+                dogs = dogs.Where(x => x.Breed.Contains(searchStringBuilder)).ToList();
+            }
+            else if (!String.IsNullOrEmpty(searchStringName))
+            {
+                dogs = dogs.Where(x => x.Name.Contains(searchStringName)).ToList();
+            }
             return View(dogs);
         }
         public IActionResult Edit(int? id)
