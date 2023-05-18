@@ -17,5 +17,6 @@ namespace DogsAppWeb.Data
         }
         public DbSet<Dog> Dogs { get; set; }
         public DbSet<DogsAppWeb.Models.DogAllViewModel> DogAllViewModel { get; set; }
+        public DbSet<DogsAppWeb.Models.DogDetailsViewModel> DogCreateViewModel { get; set; }
     }
 }
