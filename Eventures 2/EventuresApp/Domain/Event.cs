@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 namespace EventuresApp.Domain
 {
     public class Event
+<<<<<<< HEAD
     { 
+=======
+    {
+>>>>>>> c8cd4aa8cf956f70ec44df258c3daeb04f16c10b
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string Id { get; set; }
         public string Name { get; set; }
@@ -19,6 +23,9 @@ namespace EventuresApp.Domain
         public decimal PricePerTicket { get; set; }
         public EventuresUser Owner { get; set; }
         public string OwnerId { get; set; }
+<<<<<<< HEAD
         public IEnumerable<Order> Orders { get; set; } = new List<Order>();
+=======
+>>>>>>> c8cd4aa8cf956f70ec44df258c3daeb04f16c10b
     }
 }

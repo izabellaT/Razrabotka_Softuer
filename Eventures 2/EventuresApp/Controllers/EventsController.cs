@@ -28,7 +28,10 @@ namespace EventuresApp.Controllers
         {
             List<EventAllViewModel> events = context.Events.Select(eventFromDb => new EventAllViewModel
             {
+<<<<<<< HEAD
                 Id = eventFromDb.Id,
+=======
+>>>>>>> c8cd4aa8cf956f70ec44df258c3daeb04f16c10b
                 Name = eventFromDb.Name,
                 Place = eventFromDb.Place,
                 Start = eventFromDb.Start.ToString("dd-MMM-yyyy HH:mm", CultureInfo.InvariantCulture),
@@ -67,6 +70,7 @@ namespace EventuresApp.Controllers
             }
             return this.View();
         }
+<<<<<<< HEAD
 
         [Authorize]
         public IActionResult My(string searchString)
@@ -98,5 +102,7 @@ namespace EventuresApp.Controllers
             }
             return this.View(orders);
         }
+=======
+>>>>>>> c8cd4aa8cf956f70ec44df258c3daeb04f16c10b
     }
 }

@@ -22,7 +22,11 @@
                 @Html.DisplayNameFor(model => model.Place)
             </th>
             <th>
+<<<<<<< HEAD
                 Action
+=======
+                @Html.DisplayNameFor(model => model.Owner)
+>>>>>>> c8cd4aa8cf956f70ec44df258c3daeb04f16c10b
             </th>
             <th></th>
         </tr>
@@ -43,10 +47,14 @@
                 @Html.DisplayFor(modelItem => item.Place)
             </td>
             <td>
+<<<<<<< HEAD
                 @await Html.PartialAsync("_OrderPartialView", new OrderCreateBindingModel
            {
                EventId = item.Id
            })
+=======
+                @Html.DisplayFor(modelItem => item.Owner)
+>>>>>>> c8cd4aa8cf956f70ec44df258c3daeb04f16c10b
             </td>
         </tr>
 }

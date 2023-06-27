@@ -61,4 +61,9 @@ namespace EventuresApp.Infrastructure
                 .GetResult();
         }
     }
+<<<<<<< HEAD
 } 
+=======
+}
+
+>>>>>>> c8cd4aa8cf956f70ec44df258c3daeb04f16c10b

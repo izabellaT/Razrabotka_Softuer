@@ -30,6 +30,7 @@
 
                                         @if (User.IsInRole("Administrator"))
                                         {
+<<<<<<< HEAD
                                             <a class="dropdown-item" href="/Events/Create">Create Event</a>
                                             <a class="dropdown-item" href="/Events/My">All My Events</a>
 <li class="nav-item">
@@ -44,6 +45,18 @@
                                 </div>
                             </li>
                         }
+=======
+                                        <a class="dropdown-item" href="/Events/Create">Create Event</a>
+                                        }
+                                    </div>
+                                </div>
+                            </li>
+                                        }
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        
+>>>>>>> c8cd4aa8cf956f70ec44df258c3daeb04f16c10b
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
