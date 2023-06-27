@@ -52,6 +52,10 @@ namespace DogsAppWeb.Controllers
         {
             return this.View();
         }
+        public IActionResult Sales()
+        {
+            return this.View();
+        }
         public IActionResult All(string searchStringBuilder, string searchStringName)
         {
             List<DogAllViewModel> dogs = context.Dogs.Select(dogFromDb => new DogAllViewModel

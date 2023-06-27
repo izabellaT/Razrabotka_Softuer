@@ -1,0 +1,95 @@
+﻿<h1 class="text-center" style="color: lightgreen; background-color: purple; padding: 5px;">About us!</h1>
+
+<img style=" display: block; margin-left: auto; margin-right: auto; width: 70%;" src="~/images/523921.jpg" alt="skate aes" />
+<br />
+<div class="text-center" style="color:green;">
+    <p>Fast Wheels is a professional selling skateboards platform. Here we will provide you only interesting content, which we really hope you will like just as much as we do! We are dedicated to providing the best of selling skateboards, with a focus on reliability and accuracity. We provide you with a user-friendly platform with maximum ease of use and the fastest and easiest order and orientation made for the maximum convenience of our customers. We're working to turn our passion for skateboards into a booming online website. We hope you enjoy our skateboards just as much as we enjoy offering them to you.</p>
+</div>
+
+<img style="width: 350px; height:350px;" src="~/images/356e3f72c36c63df1fa88a11c5a324b4.jpg" alt="skate aes" />
+<img style="width: 350px; height:350px;" src="~/images/45270e2467328fb524628458644016b1.jpg" alt="skate aes" />
+<img style="width: 350px; height:350px;" src="~/images/f3a5da711b46c768cfe5ec9fda1fc260.jpg" alt="skate aes" />
+
+<br />
+<br />
+<div class="text-center" style="color:purple;">
+    <h4 style="color: purple">Our story:</h4>
+    <p>
+        It all began several years ago when a group of friends came together with a shared love for skateboarding. We spent countless hours riding, practicing tricks, and exploring the streets and skate parks in our neighborhood. Skateboarding became more than just a hobby; it became a way of life—a creative outlet that allowed us to express ourselves and push our limits.
+
+        As we delved deeper into the skateboarding community, we realized the need for quality skateboards and gear at affordable prices. We saw an opportunity to make a positive impact by providing skateboarders of all levels with the equipment they needed to thrive.
+
+        In 2023, we decided to turn our passion into a business and launched our skateboard selling website. Our mission was simple: to offer a wide range of top-notch skateboards, components, and accessories to skateboarders worldwide. We wanted to create a one-stop shop where both beginners and seasoned riders could find everything they needed to pursue their skateboarding dreams.
+    </p>
+</div>
+
+<div class="slideshow-container">
+    <div class="mySlides1  text-center">
+        <img src="https://image.made-in-china.com/2f0j00HCwUlfgRhPcJ/OEM-Canadian-Maple-Street-Skateboard-with-Alu-Truck-SKB-51-.jpg" width="500" height="500">
+    </div>
+
+    <div class="mySlides1  text-center">
+        <img src="https://prodimg.snbz.cz/shop1/skateboard-ambassadors-skatepark-7-875.jpg" width="500" height="500">
+    </div>
+
+    <div class="mySlides1  text-center">
+        <img src="https://content.surfstitch.com/image/upload/v1611304957/9005105MULTI/MULTI-BOARDSPORTS-SKATE-DGK-COMPLETES-9005105MULTI_1.JPG" width="500" height="500">
+    </div>
+    <div class="mySlides1  text-center">
+        <img src="https://tgmskateboards.com/content/ebay/212AbductionGreenYellow.jpg" width="500" height="500">
+    </div>
+
+    <div class="mySlides1  text-center">
+        <img src="https://www.surfstitch.com/on/demandware.static/-/Sites-ss-master-catalog/default/dw081d058f/images/10511876MULTI/MULTI-BOARDSPORTS-SKATE-BLIND-COMPLETES-10511876MULTI_1.JPG" width="500" height="500">
+    </div>
+
+    <div class="mySlides1  text-center">
+        <img src="https://i5.walmartimages.com/asr/39ebeccd-e672-4de9-8c3f-de470f04e4ca.565b3efa8131fd8f4312ee74503a6546.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" width="500" height="500">
+    </div>
+
+    <a class=".prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class=".next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<script>
+    let slideIndex = [1, 1];
+    let slideId = ["mySlides1"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) { slideIndex[no] = 1 }
+        if (n < 1) { slideIndex[no] = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex[no] - 1].style.display = "block";
+    }
+</script>
+
+<hr/>
+<div style="color:green;"  class="float-left">
+    <p style="color:purple;"><b>About</b></p>
+    <p>+08888888888</p>
+    <p>test@test.com</p>
+    <p>fast_wheels.com</p>
+    <p>10:00-18:30</p>
+    <p>ул. „8-ми март“ 232, 2306 Монте Карло, Перник, България</p>
+</div>
+
+<div class="float-right">
+    <p style="color:green" ><b>Categories</b></p>
+    <p style="color:purple"><a href="/Skateboards/All" style="color:purple">Skateboards</a></p>
+    <p style="color:purple"><a href="/Accessories/All" style="color:purple">Accessories</a></p>
+</div>
+    
+    
+
+
+    

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<SkateApp.Models.OrderListingViewModel>
+
+@{
+    ViewData["Title"] = "My orders";
+}
+
+<h1 class="text-center" style="color:lightgreen; background-color:purple; padding:5px;">Kid tested, wife disapproved. 100% fun.</h1>
+<form asp-controller="Skateboards" asp-action="My" method="get">
+    <p style="color:purple;">
+        Name: <input type="text" name="SearchString"/>
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th class="text-center" style="color:seagreen">
+                @Html.DisplayNameFor(model => model.SkateboardName)
+            </th>
+            <th class="text-center" style="color:seagreen">
+                @Html.DisplayNameFor(model => model.SkateboardsCount)
+            </th>
+            <th class="text-center" style="color:seagreen">
+                @Html.DisplayNameFor(model => model.OrderedOn)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="text-center" style="color:purple">
+                    @Html.DisplayFor(modelItem => item.SkateboardName)
+                </td >
+                <td class="text-center" style="color: purple">
+                    @Html.DisplayFor(modelItem => item.SkateboardsCount)
+                </td>
+                <td class="text-center" style="color: purple">
+                    @Html.DisplayFor(modelItem => item.OrderedOn)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

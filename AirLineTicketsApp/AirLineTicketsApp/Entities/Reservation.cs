@@ -23,6 +23,6 @@ namespace AirLineTicketsApp.Entities
 
         public DateTime DataiChas { get; set; }
         public int BroiBileti { get; set; }
-        public decimal TotalPrice => BroiBileti*Flight.Price - (Flight.Discount* Flight.Price)/100;
+        //public decimal TotalPrice => BroiBileti*Flight.Price - (Flight.Discount* Flight.Price)/100;
     }
 }

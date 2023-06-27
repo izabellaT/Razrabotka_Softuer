@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (this.User.Identity.IsAuthenticated)
+{
+    <div class="text-center">
+        <h1 class="display-4" style="color:forestgreen">Welcome at Fast wheels, @this.User.Identity.Name!</h1>
+        <h3 class="text-center" style="color:purple">Enjoy Skateboarding.</h3>
+    </div>
+    <br></br>
+    <br></br>
+
+    <div class="slideshow-container">
+        <div class="mySlides1  text-center">
+            <img src="https://www.nativeskatestore.co.uk/images/hjalte-halberg-amtk-rainbow-valley-skateboard-deck-8-5-p31517-77771_image.jpg" width="500" height="500">
+        </div>
+
+        <div class="mySlides1  text-center">
+            <img src="https://www.pokemoncenter.com/products/images/P5618/710-04722/P5618_710-04722_01.jpg" width="500" height="500">
+        </div>
+
+        <div class="mySlides1  text-center">
+            <img src="https://www.nativeskatestore.co.uk/images/brains-skateboard-deck-7-75-p39796-98104_image.jpg" width="500" height="500">
+        </div>
+        <div class="mySlides1  text-center">
+            <img src="https://www.nativeskatestore.co.uk/images/boserio-lifetime-deal-wheel-wells-skateboard-deck-8-25-p47260-117674_image.jpg" width="500" height="500">
+        </div>
+
+        <div class="mySlides1  text-center">
+            <img src="https://th.bing.com/th/id/R.6898808086cf990de6377af81cf75e16?rik=djreBlK13Bd5aQ&riu=http%3a%2f%2fwww.nativeskatestore.co.uk%2fimages%2fenjoi-skateboards-judkins-arcade-machines-skateboard-deck-8-25-p20902-50836_zoom.jpg&ehk=fnslm2m8w5LbJta8uPw9POdYVDAUn8i8xck0yf1LHi4%3d&risl=&pid=ImgRaw&r=0" width="500" height="500">
+        </div>
+
+        <div class="mySlides1  text-center">
+            <img src="https://i.pinimg.com/originals/60/30/dc/6030dcaa98cb0c383e432fe92cf01966.jpg" width="500" height="500">
+        </div>
+
+        <a class=".prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class=".next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+    //<h5 class="display-4 text-center" style="color:purple">A new skate of mind</h5>
+
+    <script>
+        let slideIndex = [1, 1];
+        let slideId = ["mySlides1"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            let i;
+            let x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+}
+else
+{
+    <div class="jumbotron bg-eventures w-75 mx-auto text-center">
+        <h1 style="color:purple">Welcome to Fast wheels</h1>
+        <hr class="hr-1" style="color:forestgreen" />
+        <h3 class="mt-4"><a href="/Identity/Account/Login" style="color:purple">Login </a>to start skating.</h3>
+        <h3 class="mt-4"><a href="/Identity/Account/Register" style="color:purple">Register </a>if you dont have an account</h3>
+    </div>
+}
+
+
+<div class="text-center">
+    <a class=" btn btn-primary text-center" asp-controller="Skateboards" asp-action="All" style="color:white; border-color:forestgreen; background-color:forestgreen">Shop now!</a>
+</div>

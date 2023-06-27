@@ -1,0 +1,33 @@
+﻿@model IEnumerable<DogsAppWeb.Models.DogCreateViewModel>
+
+@{
+    ViewData["Title"] = "Sales";
+}
+
+<div class="text-center">
+    <div class="mainText">
+        <h1 class="display-4 text-capitalize text-black">
+            Our great selection of Pizzass!
+        </h1>
+        <h4>Choose one, or try our pizza builder! then order one and done</h4>
+        <h4>No need to give any more details</h4>
+        <h4>We already knoew everything!</h4>
+        <p class="smallText"><i>Only one pizza per order</i></p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-5 mt-5">
+                <div class="w-100 row makeYourOwnDiv">
+                    <div class="col-4">
+                        <img src="https://th.bing.com/th/id/OIP.SlnjMSdNaDSG00NjiyOZEQHaFD?w=274&h=187&c=7&r=0&o=5&dpr=1.1&pid=1.7" class="w-100" />
+                    </div>
+                    <div class="col-8 align-middle makeYourOwnText">
+                        <h3 style="text-align:left;">Create Your Own Pizaa</h3>
+                        <p style="text-align:left;">Create Your Own Pizaa with our pizza maker</p>
+                        <a class="btn btn-primary mt-1" style="background-color:darkorange; border-color:darkorange;" asp-area="" asp-controller="Dogs" asp-action="Create">Try now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>

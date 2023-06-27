@@ -1,0 +1,6 @@
+﻿@model FavoriteCreateBindingModel
+
+<form asp-controller="Favorites" asp-action="Create" method="post">
+        <button type="submit" class="btn btn-primary" style="color:white; background-color:purple; border-color:purple">Add</button>
+    <input type="hidden" asp-for="SkateboardId" value="@Model.SkateboardId" />
+</form>
